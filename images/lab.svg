@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650">
+<style>
+.lab-signal{transform-box:view-box;transform-origin:450px 280px;animation:lab-pulse 6s ease-in-out infinite}
+@keyframes lab-pulse{0%,100%{transform:scale(1);opacity:.75}50%{transform:scale(1.14);opacity:1}}
+@media(prefers-reduced-motion:reduce){.lab-signal{animation:none!important}}
+</style>
+<rect width="900" height="650" fill="#ebdfc8"/>
+<path d="M0 470L900 390V650H0Z" fill="#d2bfa0"/>
+<path d="M170 100h560v340H170z" fill="#d9e4d9" stroke="#405449" stroke-width="3"/>
+<path d="M450 100v340M170 270h560" stroke="#405449" stroke-width="4"/>
+<path d="M205 132h205v110H205zM490 132h205v110H490zM205 300h205v108H205zM490 300h205v108H490z" fill="#9aafa6" opacity=".6"/>
+<path d="M395 465v-110h110v110M365 465h170v20H365z" fill="#405449"/>
+<path d="M430 355h40v-50h-40z" fill="#d4ef83"/><path d="M410 305h80" stroke="#405449" stroke-width="8"/>
+<g class="lab-signal"><circle cx="450" cy="280" r="42" fill="#c9f36a" opacity=".75"/><path d="M450 238v84M408 280h84" stroke="#405449" stroke-width="2"/></g>
+<g fill="#405449" font-family="monospace" font-size="13"><text x="48" y="55">LABORATORY / OBSERVATION</text><text x="690" y="590">SAMPLE 07</text></g>
+</svg>

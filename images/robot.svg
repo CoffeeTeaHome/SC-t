@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650">
+<style>
+.robot-arm{transform-box:view-box;transform-origin:445px 320px;animation:robot-idle 8s ease-in-out infinite}
+.robot-grip{transform-box:view-box;transform-origin:625px 150px;animation:robot-grip 5s ease-in-out infinite}
+@keyframes robot-idle{0%,100%{transform:rotate(0)}50%{transform:rotate(1.2deg)}}
+@keyframes robot-grip{0%,100%{transform:rotate(0)}50%{transform:rotate(-3deg)}}
+@media(prefers-reduced-motion:reduce){.robot-arm,.robot-grip{animation:none!important}}
+</style>
+<rect width="900" height="650" fill="#d9e2dd"/>
+<path d="M0 520h900" stroke="#65766d" stroke-width="2"/><path d="M100 520V140M800 520V140" stroke="#b0c3b4" stroke-width="2" stroke-dasharray="7 10"/>
+<g class="robot-arm"><path d="M240 520l78-150 80-25 45-105 95 22-53 131-94 50-56 77" fill="none" stroke="#3459df" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"/><path d="M445 238l-20-85 73-35 58 40-21 92" fill="#c9f36a" stroke="#243d35" stroke-width="5"/><circle cx="318" cy="370" r="48" fill="#c9f36a" stroke="#243d35" stroke-width="5"/><circle cx="318" cy="370" r="16" fill="#3459df"/><circle cx="445" cy="240" r="35" fill="#dce5ca" stroke="#243d35" stroke-width="5"/><circle cx="445" cy="240" r="12" fill="#3459df"/><path d="M530 178l70-38 35 21-18 46-72 11" fill="none" stroke="#243d35" stroke-width="16" stroke-linecap="round"/><g class="robot-grip"><path d="M615 160l30-36m-16 58l49-13" stroke="#243d35" stroke-width="8" stroke-linecap="round"/></g></g>
+<g fill="#243d35" font-family="monospace" font-size="13"><text x="50" y="55">ROBOTICS / MOTION STUDY</text><text x="695" y="590">AXIS 03</text></g>
+</svg>

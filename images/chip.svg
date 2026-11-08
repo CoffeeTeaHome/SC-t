@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650">
+<style>
+.chip-core{transform-box:view-box;transform-origin:450px 325px;animation:chip-pulse 8s ease-in-out infinite}
+.chip-pins{animation:pin-signal 5.5s ease-in-out infinite}
+@keyframes chip-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.025)}}
+@keyframes pin-signal{0%,100%{opacity:.8}50%{opacity:1}}
+@media(prefers-reduced-motion:reduce){.chip-core,.chip-pins{animation:none!important}}
+</style>
+<rect width="900" height="650" fill="#eadfca"/>
+<g class="chip-pins" stroke="#4e6253" stroke-width="8" fill="none" opacity=".8"><path d="M450 110v95M450 445v95M240 325h105M555 325h105M300 175l75 75M525 400l75 75M300 475l75-75M525 250l75-75"/></g>
+<g class="chip-core"><rect x="300" y="175" width="300" height="300" rx="18" fill="#263e37" stroke="#70846a" stroke-width="8"/><rect x="345" y="220" width="210" height="210" rx="8" fill="#3459df"/><path d="M375 250h150v150H375z" fill="#c9f36a"/><path d="M400 275h100v100H400z" fill="#3459df"/></g>
+<g stroke="#c9f36a" stroke-width="5"><path d="M425 175v45M475 175v45M525 175v45M425 430v45M475 430v45M525 430v45M300 225h45M300 275h45M300 375h45M300 425h45M555 225h45M555 275h45M555 375h45M555 425h45"/></g>
+<g fill="#263e37" font-family="monospace" font-size="13"><text x="50" y="55">SILICON / PROCESSOR STUDY</text><text x="710" y="590">NANO 07</text></g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650">
+<style>
+.rocket-body{transform-box:view-box;transform-origin:445px 330px;animation:rocket-float 7s ease-in-out infinite}
+.rocket-flame{transform-box:view-box;transform-origin:445px 570px;animation:flame-flicker 1.8s ease-in-out infinite}
+@keyframes rocket-float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-8px) rotate(1deg)}}
+@keyframes flame-flicker{0%,100%{transform:scaleY(1);opacity:1}50%{transform:scaleY(.78);opacity:.78}}
+@media(prefers-reduced-motion:reduce){.rocket-body,.rocket-flame{animation:none!important}}
+</style>
+<rect width="900" height="650" fill="#e9dfca"/>
+<g fill="#4b5a54" opacity=".65"><circle cx="160" cy="120" r="3"/><circle cx="730" cy="130" r="2"/><circle cx="770" cy="450" r="3"/><circle cx="180" cy="470" r="2"/><circle cx="570" cy="80" r="2"/></g>
+<circle cx="690" cy="270" r="100" fill="#c9f36a" opacity=".6"/><circle cx="690" cy="270" r="75" fill="#8ba57e"/>
+<g class="rocket-body"><path d="M425 110c-88 92-105 222-45 350l65 70 65-70c60-128 43-258-45-350l-20-20z" fill="#f1f0e8" stroke="#334b3b" stroke-width="5"/><path d="M445 110c-88 92-105 222-45 350l65 70V90z" fill="#c8d0c5" opacity=".7"/><circle cx="445" cy="300" r="48" fill="#3459df" stroke="#334b3b" stroke-width="8"/><circle cx="445" cy="300" r="28" fill="#c9f36a"/><path d="M380 420l-92 68 78 8 53-32M510 420l92 68-78 8-53-32" fill="#3459df" stroke="#334b3b" stroke-width="5"/></g>
+<g class="rocket-flame"><path d="M400 520l45 85 45-85-24 100h-42z" fill="#e4a65d"/><path d="M425 545l20 55 20-55-20 37z" fill="#f7cf82"/></g>
+<g fill="#334b3b" font-family="monospace" font-size="13"><text x="50" y="55">LUNAR PROGRAM / FLIGHT PLAN</text><text x="700" y="580">MISSION 06</text></g>
+</svg>

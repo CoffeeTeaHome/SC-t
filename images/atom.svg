@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650">
+<style>
+.atom-orbits{transform-box:view-box;transform-origin:455px 330px;animation:atom-turn 90s linear infinite}
+.atom-core{transform-box:view-box;transform-origin:455px 330px;animation:atom-pulse 8s ease-in-out infinite}
+.atom-electrons{animation:electron-glow 5s ease-in-out infinite}
+@keyframes atom-turn{to{transform:rotate(360deg)}}
+@keyframes atom-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.045)}}
+@keyframes electron-glow{0%,100%{opacity:1}50%{opacity:.72}}
+@media(prefers-reduced-motion:reduce){.atom-orbits,.atom-core,.atom-electrons{animation:none!important}}
+</style>
+<rect width="900" height="650" fill="#e2e6d6"/>
+<g class="atom-orbits" fill="none" stroke="#334c3d" stroke-width="2.2" opacity=".8"><ellipse cx="455" cy="330" rx="300" ry="110"/><ellipse cx="455" cy="330" rx="300" ry="110" transform="rotate(60 455 330)"/><ellipse cx="455" cy="330" rx="300" ry="110" transform="rotate(120 455 330)"/></g>
+<g class="atom-core"><circle cx="455" cy="330" r="65" fill="#c9f36a" stroke="#334c3d" stroke-width="2"/><circle cx="455" cy="330" r="33" fill="#3459df"/><circle cx="443" cy="315" r="9" fill="#f1f0e8" opacity=".8"/></g>
+<g class="atom-electrons" fill="#3459df" stroke="#e2e6d6" stroke-width="4"><circle cx="750" cy="330" r="18"/><circle cx="308" cy="95" r="18"/><circle cx="305" cy="565" r="18"/></g>
+<g fill="#334c3d" font-family="monospace" font-size="13"><text x="55" y="58">STRUCTURE / MATTER</text><text x="690" y="594">MODEL 01.4</text></g>
+<path d="M90 520h110m-55-55v110M700 105h120m-60-60v120" stroke="#8da75a" stroke-width="2"/>
+</svg>

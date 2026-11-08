@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650">
+<style>
+.network-nodes{animation:network-shimmer 6s ease-in-out infinite}
+.network-core{transform-box:view-box;transform-origin:480px 370px;animation:network-pulse 7s ease-in-out infinite}
+.network-rings{transform-box:view-box;transform-origin:480px 370px;animation:ring-turn 48s linear infinite}
+@keyframes network-shimmer{0%,100%{opacity:1}50%{opacity:.76}}
+@keyframes network-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+@keyframes ring-turn{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.network-nodes,.network-core,.network-rings{animation:none!important}}
+</style>
+<defs><radialGradient id="bg"><stop stop-color="#e4e9d2"/><stop offset="1" stop-color="#c6d3d7"/></radialGradient><linearGradient id="node" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c9f36a"/><stop offset="1" stop-color="#6e8d32"/></linearGradient></defs>
+<rect width="900" height="650" fill="url(#bg)"/>
+<g stroke="#3751a7" stroke-width="1.4" opacity=".5">
+<path d="M92 174L240 104 390 190 550 95 750 205M92 174L210 350 390 190 480 370 750 205M210 350L130 530 340 500 480 370 650 530 750 205M390 190L340 500M550 95L650 530M240 104L340 500M92 174L390 190M480 370L750 205"/>
+<path d="M240 104L480 370M550 95L390 190M210 350L750 205M130 530L480 370" opacity=".35"/>
+</g>
+<g class="network-nodes" fill="#3459df" opacity=".85"><circle cx="92" cy="174" r="7"/><circle cx="240" cy="104" r="9"/><circle cx="390" cy="190" r="13"/><circle cx="550" cy="95" r="8"/><circle cx="750" cy="205" r="11"/><circle cx="210" cy="350" r="9"/><circle cx="480" cy="370" r="17"/><circle cx="130" cy="530" r="8"/><circle cx="340" cy="500" r="12"/><circle cx="650" cy="530" r="10"/></g>
+<g fill="url(#node)" stroke="#243c32" stroke-width="2"><g class="network-core"><circle cx="480" cy="370" r="31"/></g><circle cx="390" cy="190" r="22"/><circle cx="650" cy="530" r="18"/></g>
+<g class="network-rings" fill="none" stroke="#243c32" stroke-width="2" opacity=".6"><circle cx="480" cy="370" r="55"/><circle cx="480" cy="370" r="79" stroke-dasharray="3 9"/><circle cx="390" cy="190" r="41" stroke-dasharray="2 7"/></g>
+<g fill="#263c38" font-family="monospace" font-size="13"><text x="48" y="54">NEURAL / CONNECTION MAP</text><text x="700" y="590">0x 01 10</text></g>
+</svg>

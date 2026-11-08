@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650">
+<style>
+.planet-rings{transform-box:view-box;transform-origin:472px 366px;animation:planet-ring-turn 80s linear infinite}
+.planet-body{transform-box:view-box;transform-origin:470px 340px;animation:planet-drift 9s ease-in-out infinite}
+@keyframes planet-ring-turn{to{transform:rotate(360deg)}}
+@keyframes planet-drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@media(prefers-reduced-motion:reduce){.planet-rings,.planet-body{animation:none!important}}
+</style>
+<defs><radialGradient id="planet"><stop stop-color="#e9edc7"/><stop offset=".48" stop-color="#91a77a"/><stop offset="1" stop-color="#314b56"/></radialGradient><linearGradient id="ring"><stop stop-color="#b7c3a0" stop-opacity=".15"/><stop offset=".45" stop-color="#f0e4b6"/><stop offset=".75" stop-color="#647c82"/><stop offset="1" stop-color="#d4dfa9" stop-opacity=".2"/></linearGradient></defs>
+<rect width="900" height="650" fill="#d6dce6"/>
+<g fill="#4c5c71" opacity=".7"><circle cx="92" cy="100" r="2"/><circle cx="205" cy="240" r="3"/><circle cx="725" cy="120" r="2"/><circle cx="790" cy="470" r="3"/><circle cx="120" cy="520" r="2"/><circle cx="630" cy="580" r="2"/><circle cx="400" cy="70" r="2"/><circle cx="535" cy="160" r="2"/></g>
+<g class="planet-rings"><ellipse cx="472" cy="366" rx="315" ry="94" transform="rotate(-22 472 366)" fill="none" stroke="url(#ring)" stroke-width="28"/><ellipse cx="470" cy="366" rx="315" ry="94" transform="rotate(-22 472 366)" fill="none" stroke="#edf0d7" stroke-width="3" opacity=".65"/></g>
+<g class="planet-body"><circle cx="470" cy="340" r="190" fill="url(#planet)"/><path d="M302 282c58-54 129-67 215-42 44 13 83 46 128 40M287 373c84-34 143-14 213 21 47 23 91 21 136 3M360 485c71-49 151-42 222-4" fill="none" stroke="#d5e2b2" stroke-width="22" opacity=".25" stroke-linecap="round"/><path d="M290 327c85 30 173 26 247-6 36-16 65-35 91-63" fill="none" stroke="#273c4a" stroke-width="8" opacity=".2"/></g>
+<g fill="#273b4b" font-family="monospace" font-size="12"><text x="48" y="54">EXOPLANET / FIELD NOTES</text><text x="730" y="595">- 04.28 -</text></g>
+</svg>
